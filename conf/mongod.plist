@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>mongodb</string>
+    <!-- mongod start command and args -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/local/mongodb/latest/bin/mongod</string>
+        <string>--config</string>
+        <string>/etc/mongodb/conf/mongod.conf</string>
+        <string>--auth</string>
+    </array>
+    <!-- run when macOS starts -->
+    <key>RunAtLoad</key>
+    <true/>
+    <!-- macOS will keep the process in memory -->
+    <key>KeepAlive</key>
+    <true/>
+    <!-- _mongod group name we added with dscl -->
+    <key>GroupName</key>
+    <string>_mongod</string>
+    <!-- _mongod service account we addded with dscl -->
+    <key>UserName</key>
+    <string>_mongod</string>
+    <!-- macOS host directory where mongoDB bits reside -->
+    <key>WorkingDirectory</key>
+    <string>/usr/local/mongodb/latest</string>
+    <!-- error log -->
+    <key>StandardErrorPath</key>
+    <string>/var/log/mongodb/error.log</string>
+    <!-- stdout log -->
+    <key>StandardOutPath</key>
+    <string>/var/log/mongodb/output.log</string>
+</dict>
+</plist>
