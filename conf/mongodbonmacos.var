@@ -1,0 +1,6 @@
+MONGODB_HOME=$HOME/local/mongodb
+MONGODB_CONF=$HOME/packages/mongodb/conf
+MONGODB_LOG=$HOME/log/mongodb
+MONGODB_DATA=$HOME/mongodb-data/db0
+MONGODB_BIND_IP=127.0.0.1
+MONGODB_PORT=27017
