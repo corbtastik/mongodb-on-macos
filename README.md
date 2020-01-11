@@ -6,17 +6,10 @@ All MongoDB bits are installed into it's own folder, so if you'd like to install
 
 By default MongoDB is installed into `$MOM_HOME`, which is set to `$HOME/.mom`.
 
-### Grab a MongoDB distro
+### Steps
 
-Pick a (tgz) distro from MongoDB
-
-* [MongoDB Community](https://www.mongodb.com/download-center/community)
-* [MongoDB Enterprise](https://www.mongodb.com/download-center/enterprise)
-
-Place the distro in this directory and configure `$MONGODB_DISTRO` in `mom.var`
-
-### High-level steps
-
+* Grab a MongoDB distro for macOS
+* Place the distro in this directory and configure `$MONGODB_DISTRO` in `mom.var`
 * Configure `conf/mom.var` to your taste
 * Run `install.sh` to pave MongoDB
 * Run `start.sh` and use the [localhost exception](https://docs.mongodb.com/manual/core/security-users/#localhost-exception) to create your admin user.
@@ -26,3 +19,8 @@ mongo admin --eval 'db.createUser({user:"corbs",pwd:"howdymongo",roles:[{role: "
 ```
 
 Now go Mongo.
+
+### MongoDB downloads
+
+* [MongoDB Community](https://www.mongodb.com/download-center/community)
+* [MongoDB Enterprise](https://www.mongodb.com/download-center/enterprise)
