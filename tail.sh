@@ -1,3 +1,3 @@
 #!/bin/bash
-source conf/mongodbonmacos.var
+source conf/mom.var
 tail -f ${MONGODB_LOG}/mongod.log

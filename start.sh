@@ -1,3 +1,3 @@
 #!/bin/bash
-source conf/mongodbonmacos.var
+source conf/mom.var
 mongod --config ${MONGODB_CONF}/mongod.conf --auth & echo $! > mongodb.pid
