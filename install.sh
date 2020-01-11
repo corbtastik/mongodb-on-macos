@@ -29,3 +29,7 @@ tar -xzvf ${MONGODB_DISTRO} --directory ${MONGODB_HOME} --strip-components=1
 # mongoDB config, replace vars in config template with real values
 # =============================================================================
 echo ${MONGOD_FILE} > ${MONGODB_CONF}/mongod.conf
+# =============================================================================
+# start and use localhost exception to add admin user
+# =============================================================================
+mongod --config ${MONGODB_CONF}/mongod.conf --auth & echo $! > mongodb.pid
