@@ -10,14 +10,14 @@ By default MongoDB is installed into `$MOM_HOME`, which is set to `$HOME/.mom`.
 
 * Grab a MongoDB distro for macOS
 * Place the distro in this directory
-* Configure `conf/mom.var` to your taste
-* Run `install.sh` to pave and start MongoDB
+* Configure `mom.var` to your taste
+* Run `install.sh` to lay some MongoDB bits on yo machine
 * Use the [localhost exception](https://docs.mongodb.com/manual/core/security-users/#localhost-exception) to create your admin user.
 * Restart MongoDB
 
 ```bash
 # replace USER and PASS
-mongo admin --eval 'db.createUser({user:"USER",pwd:"PASS",roles:[{role: "root", db: "admin"}]})'
+mongo admin --eval 'db.createUser({user:"main_user",pwd:"howdy123",roles:[{role: "root", db: "admin"}]})'
 ```
 
 Now go Mongo.

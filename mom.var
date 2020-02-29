@@ -1,0 +1,4 @@
+MOM_ID=m0
+MONGODB_PORT=27017
+MONGODB_BIND_IP=127.0.0.1
+MONGODB_DISTRO=mongodb-macos-x86_64-enterprise-4.2.3.tgz
